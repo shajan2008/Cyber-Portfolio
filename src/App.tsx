@@ -18,7 +18,7 @@ export default function App() {
               &lt;/&gt;
             </span>
             <span className='font-bold tracking-tight text-slate-900 text-sm md:text-base'>
-              Full-Stack and AI-Systems
+              {lang === 'EN' ? 'Full-Stack and AI-Systems' : 'Full-Stack & KI-Projekte'}
             </span>
           </div>
           <div className='hidden md:flex items-center gap-6 text-sm font-medium text-slate-600'>
@@ -44,8 +44,22 @@ export default function App() {
           </div>
         </nav>
       </header>
-      <main>
-        
+      <main className='max-w-5xl mx-auto px-4 py-16 space-y-24'>
+        <section className='text-center space-y-16 pt-12'>
+          <div className='inline-flex items-center gap-2 px-3 py-1 rounded-full border border-slate-200 bg-slate-50 text-xs font-medium text-slate-600'>
+            <span className='w-2 h-2 rounded-full bg-emerald-500 animate-pulse' />
+            {lang === 'EN' ? 'Available for remote Full-Stack & AI-Systems' : 'Verfügbar für Remote Full-Stack & KI-Projekte'}
+          </div>
+          <h1 className='text-4xl md:text-6xl font-bold tracking-tight text-slate-900 max-w-3xl mx-auto'>
+            {lang === 'EN' ? 'Architecting High Performance' : 'Entwicklung von Hochleistungs'}
+            <span className='bg-linear-to-r from-violet-600 via-indigo-600 to-sky-500 bg-clip-text text-transparent'>
+              {lang === 'EN' ? 'Web & AI Applications' : 'Web & KI-Systemen'}
+            </span>
+          </h1>
+          <p className='text-slate-600 text-base md:text-lg max-w-2xl mx-auto'>
+            {lang === 'EN'? 'Security is My first priority' : 'Sicherheit hat für mich oberste Priorität'}
+          </p>
+        </section>
       </main>
     </div>
   );
