@@ -1,5 +1,6 @@
 import { useState } from 'react';
 import type { Language } from './types/portfolio';
+import { SiFastapi, SiOllama, SiPostgresql, SiPython, SiPytorch, SiReact, SiTailwindcss, SiTypescript, SiVite } from 'react-icons/si';
 
 
 
@@ -45,13 +46,13 @@ export default function App() {
         </nav>
       </header>
       <main className='max-w-5xl mx-auto px-4 py-16 space-y-24'>
-        <section className='text-center space-y-16 pt-12'>
+        <section className='text-center space-y-6 pt-12'>
           <div className='inline-flex items-center gap-2 px-3 py-1 rounded-full border border-slate-200 bg-slate-50 text-xs font-medium text-slate-600'>
             <span className='w-2 h-2 rounded-full bg-emerald-500 animate-pulse' />
             {lang === 'EN' ? 'Available for remote Full-Stack & AI-Systems' : 'Verfügbar für Remote Full-Stack & KI-Projekte'}
           </div>
           <h1 className='text-4xl md:text-6xl font-bold tracking-tight text-slate-900 max-w-3xl mx-auto'>
-            {lang === 'EN' ? 'Architecting High Performance' : 'Entwicklung von Hochleistungs'}
+            {lang === 'EN' ? 'Architecting High Performance ' : 'Entwicklung von Hochleistungs'}
             <span className='bg-linear-to-r from-violet-600 via-indigo-600 to-sky-500 bg-clip-text text-transparent'>
               {lang === 'EN' ? 'Web & AI Applications' : 'Web & KI-Systemen'}
             </span>
@@ -59,6 +60,100 @@ export default function App() {
           <p className='text-slate-600 text-base md:text-lg max-w-2xl mx-auto'>
             {lang === 'EN'? 'Security is My first priority' : 'Sicherheit hat für mich oberste Priorität'}
           </p>
+        </section>
+        <section id='#skills' className='space-y-8'>
+          <div className='space-y-2'>
+            <div className='text-xs font-mono font-bold tracking-wider text-violet-600 uppercase'>
+              {lang === 'EN' ? 'SKILLS & ARCHITECTURE' : 'FÄHIGEITEN & STACK'}
+            </div>
+            <h3 className='text-2xl md:text-3xl font-bold tracking-tight text-slate-900'>
+              {lang === 'EN' ? 'Modern Tools. Enterprise Standards' : 'Moderne Werkzeuge. Enterprise-Standards'}
+            </h3>
+          </div>
+          <div className='grid grid-cols-1 md:grid-cols-3 gap-6'>
+            <div className='p-6 rounded-3xl bg-slate-50/60 border border-slate-200/80 hover:border-violet-300 hover:shadow-md transition space-y-4'>
+              <span className='w-10 h-10 rounded-xl bg-violet-100 text-violet-600 flex items-center justify-center font-mono font-bold text-xs'>
+                &lt;UI&gt;
+              </span>
+              <h3>
+                {lang === 'EN' ? 'Frontend Architecture' : 'Frontend-Architektur'}
+              </h3>
+              <p>
+                {lang === 'EN' ? 'Type-safe component trees in React ensure reliable data flow while responsive Tailwind utility classes deliver fluid layouts across all device screens' : 'Typsichere Komponentenbäume in React gewährleisten einen zuverlässigen Datenfluss, während responsive Tailwind-Utility-Klassen für fließende Layouts auf allen Bildschirmgrößen sorgen.'}
+              </p>
+              <span className='flex flex-wrap'>
+                <span className='inline-flex items-center gap-1.5 px-3 py-1 rounded-full text-xs font-medium bg-violet-500/10 text-violet-600 border border-violet-500/20 '>
+                  <SiReact className='w-3.5 h-3.5 text-violet-500'/>
+                  React
+                </span>
+                <span className='inline-flex items-center gap-1.5 px-3 py-1 rounded-full text-xs font-medium bg-violet-500/10 text-violet-600 border border-violet-500/20 '>
+                  <SiTailwindcss className='w-3.5 h-3.5 text-violet-500'/>
+                  Tailwind
+                </span>
+                <span className='inline-flex items-center gap-1.5 px-3 py-1 rounded-full text-xs font-medium bg-violet-500/10 text-violet-600 border border-violet-500/20 '>
+                  <SiTypescript className='w-3.5 h-3.5 text-violet-500'/>
+                  TypeScript
+                </span>
+                <span className='inline-flex items-center gap-1.5 px-3 py-1 rounded-full text-xs font-medium bg-violet-500/10 text-violet-600 border border-violet-500/20 '>
+                  <SiVite className='w-3.5 h-3.5 text-violet-500'/>
+                  Vite
+                </span>
+              </span>
+            </div>
+            <div className='p-6 rounded-3xl bg-slate-50/60 border border-slate-200/80 hover:border-sky-300 hover:shadow-md transition space-y-4'>
+              <span className='w-10 h-10 rounded-xl bg-sky-100 text-sky-600 flex items-center justify-center font-mono font-bold text-xs'>
+                API
+              </span>
+              <h3>
+                {lang === 'EN' ? 'Backend & Relational DBs' : 'Backend & Relationale DBs'}
+              </h3>
+              <p>
+                {lang === 'EN' ? 'Asynchronous Python APIs handle high-concurrency requests efficiently while structured PostgreSQL schemas ensure long-term data persistence and integrity.' : 'Asynchrone Python-APIs bewältigen Anfragen mit hoher Gleichzeitigkeit effizient, während strukturierte PostgreSQL-Schemata die langfristige Datenpersistenz und -integrität gewährleisten.'}
+              </p>
+              <div className='flex flex-wrap'>
+                <span className='inline-flex items-center gap-1.5 px-3 py-1 rounded-full text-xs font-medium bg-sky-500/10 text-sky-600 border border-sky-500/20'>
+                  <SiFastapi className='w-3.5 h-3.5 text-sky-500'/>
+                    FastAPI
+                </span>
+                <span className='inline-flex items-center gap-1.5 px-3 py-1 rounded-full text-xs font-medium bg-sky-500/10 text-sky-600 border border-sky-500/20'>
+                  <SiPostgresql className='w-3.5 h-3.5 text-sky-500'/>
+                    PostgreSQL
+                </span>
+                <span className='inline-flex items-center gap-1.5 px-3 py-1 rounded-full text-xs font-medium bg-sky-500/10 text-sky-600 border border-sky-500/20'>
+                  <SiPython className='w-3.5 h-3.5 text-sky-500'/>
+                    Python
+                </span>
+              </div>
+            </div>
+            <div className='p-6 rounded-3xl bg-slate-50/60 border border-slate-200/80 hover:border-indigo-300 hover:shadow-md transition space-y-4'>
+              <div className='w-10 h-10 rounded-xl bg-indigo-100 text-indigo-600 flex items-center justify-center font-mono font-bold text-xs'>
+                {lang === 'EN' ? 'AI' : 'KI'}
+              </div>
+              <h3>
+                {lang === 'EN' ? 'AI Systems & Automation' : 'KI Systeme & Automation'}
+              </h3>
+              <p>
+                {lang === 'EN' ? 'RAG pipelines privately process domain-specific documents to feed context into local LLMs , enabling precise, structured data extraction without cloud data leaks.' : 'Lokale RAG-Pipelines (Retrieval-Augmented Generation) verarbeiten domänenspezifische Dokumente vertraulich, um Kontext in lokale Large Language Models (LLMs) einzuspeisen und so eine präzise, ​​strukturierte Datenextraktion ohne das Risiko von Datenabflüssen in die Cloud zu ermöglichen.'}
+              </p>
+              <span className='flex flex-wrap'>
+                <span className='inline-flex items-center gap-1.5 px-3 py-1 rounded-full text-xs font-medium bg-indigo-500/10 text-indigo-600 border border-indigo-500/20'>
+                  <SiPytorch className='w-3.5 h-3.5 text-indigo-500'/>
+                  PyTorch
+                </span>
+                <span className='inline-flex items-center gap-1.5 px-3 py-1 rounded-full text-xs font-medium bg-indigo-500/10 text-indigo-600 border border-indigo-500/20'>
+                  <SiOllama className='w-3.5 h-3.5 text-indigo-500'/>
+                  LLM
+                </span>
+                <span className='inline-flex items-center gap-1.5 px-3 py-1 rounded-full text-xs font-medium bg-indigo-500/10 text-indigo-600 border     border-indigo-500/20'>
+                  PyTorch
+                </span>
+                <span className='inline-flex items-center gap-1.5 px-3 py-1 rounded-full text-xs font-medium bg-indigo-500/10 text-indigo-600 border border-indigo-500/20'>
+                  <SiPytorch className='w-3.5 h-3.5 text-indigo-500'/>
+                  PyTorch
+                </span>
+              </span>
+            </div>
+          </div>
         </section>
       </main>
     </div>
