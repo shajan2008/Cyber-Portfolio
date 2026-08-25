@@ -144,12 +144,11 @@ export default function App() {
                   <SiOllama className='w-3.5 h-3.5 text-indigo-500'/>
                   LLM
                 </span>
-                <span className='inline-flex items-center gap-1.5 px-3 py-1 rounded-full text-xs font-medium bg-indigo-500/10 text-indigo-600 border     border-indigo-500/20'>
-                  PyTorch
+                <span className='inline-flex items-center gap-1.5 px-3 py-1 rounded-full text-xs font-medium bg-indigo-500/10 text-indigo-600 border  border-indigo-500/20'>
+                  RAG
                 </span>
                 <span className='inline-flex items-center gap-1.5 px-3 py-1 rounded-full text-xs font-medium bg-indigo-500/10 text-indigo-600 border border-indigo-500/20'>
-                  <SiPytorch className='w-3.5 h-3.5 text-indigo-500'/>
-                  PyTorch
+                  PgVector
                 </span>
               </span>
             </div>
