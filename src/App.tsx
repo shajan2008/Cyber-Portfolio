@@ -1,6 +1,6 @@
 import { useState } from 'react';
 import type { Language } from './types/portfolio';
-import { SiFastapi, SiOllama, SiPostgresql, SiPython, SiPytorch, SiReact, SiTailwindcss, SiTypescript, SiVite } from 'react-icons/si';
+import { SiApple, SiDocker, SiFastapi, SiGit, SiGithub, SiMacos, SiOllama, SiPostgresql, SiPython, SiPytorch, SiRam, SiReact, SiTailwindcss, SiTypescript, SiVite } from 'react-icons/si';
 
 
 
@@ -149,6 +149,58 @@ export default function App() {
                 </span>
                 <span className='inline-flex items-center gap-1.5 px-3 py-1 rounded-full text-xs font-medium bg-indigo-500/10 text-indigo-600 border border-indigo-500/20'>
                   PgVector
+                </span>
+              </span>
+            </div>
+            <div className='md:col-span-2 p-6 rounded-3xl bg-slate-50/60 border border-slate-200/80 hover:border-slate-300 hover:shadow-md transition space-y-4'>
+              <span className='w-10 h-10 rounded-xl bg-slate-200 text-slate-700 flex items-center justify-center font-mono font-bold text-xs'>
+                DEV
+              </span>
+              <h3>
+                {lang === 'EN' ? 'Engineering Workflow and Dev OPS' : 'Entwicklungs-Workflow & DevOps'}
+              </h3>
+              <p>
+                {lang === 'EN' ? 'Mastering local development on macOS demands a flawless Git architecture, isolated containerized workloads, and crisp system optimization for peak engineering velocity.' : 'Die Beherrschung der lokalen Entwicklung unter macOS erfordert eine einwandfreie Git-Architektur, isolierte, containerisierte Workloads sowie eine präzise Systemoptimierung für maximale Entwicklungsgeschwindigkeit.'}
+              </p>
+            <span className='flex flex-wrap'>
+              <span className='inline-flex items-center gap-1.5 px-3 py-1 rounded-full text-xs font-medium bg-slate-500/10 text-slate-600 border border-slate-500/20'>
+                <SiDocker/>
+                Docker
+              </span>
+              <span className='inline-flex items-center gap-1.5 px-3 py-1 rounded-full text-xs font-medium bg-slate-500/10 text-slate-600 border border-slate-500/20'>
+                <SiGit/>
+                Git
+              </span>
+              <span className='inline-flex items-center gap-1.5 px-3 py-1 rounded-full text-xs font-medium bg-slate-500/10 text-slate-600 border border-slate-500/20'>
+                <SiGithub/>
+                GitHub
+              </span>
+              <span className='inline-flex items-center gap-1.5 px-3 py-1 rounded-full text-xs font-medium bg-slate-500/10 text-slate-600 border border-slate-500/20'>
+                <SiMacos/>
+                MacOs
+              </span>
+              <span className='inline-flex items-center gap-1.5 px-3 py-1 rounded-full text-xs font-medium bg-slate-500/10 text-slate-600 border border-slate-500/20'>
+                CI/CD
+              </span>
+            </span>
+            </div>
+            <div className='p-6 rounded-3xl bg-slate-50/60 border border-slate-200/80 hover:border-amber-300 hover:shadow-md transition space-y-4'>
+              <span className='w-10 h-10 rounded-xl bg-amber-100 text-amber-600 flex items-center justify-center font-mono font-bold text-xs'>
+                <SiApple/>
+              </span>
+              <h3>
+                {lang === 'EN' ? 'Hardware and Performance Lab' : 'Hardware- & Leistungslabor'}
+              </h3>
+              <p>
+                {lang === 'EN' ? 'Native virtualization on Apple Silicon delivers unmatched execution speed and high thermal efficiency by running containerized workloads directly on unified memory.' : 'Native Virtualisierung auf Apple Silicon sorgt für unübertroffene Ausführungsgeschwindigkeit und hohe thermische Effizienz, indem containerisierte Workloads direkt auf dem Unified Memory ausgeführt werden.'}
+              </p>
+              <span className='flex flex-wrap'>
+                <span className='inline-flex items-center gap-1.5 px-3 py-1 rounded-full text-xs font-medium bg-amber-500/10 text-amber-600 border border-amber-500/20'>
+                  <SiApple/>
+                  Apple Silicon
+                </span>
+                <span className='inline-flex items-center gap-1.5 px-3 py-1 rounded-full text-xs font-medium bg-amber-500/10 text-amber-600 border border-amber-500/20'>
+                  16 GB Memory
                 </span>
               </span>
             </div>
