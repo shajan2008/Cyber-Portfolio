@@ -1,6 +1,6 @@
 import { useState } from 'react';
 import type { Language } from './types/portfolio';
-import { SiApple, SiDocker, SiFastapi, SiGit, SiGithub, SiMacos, SiOllama, SiPostgresql, SiPython, SiPytorch, SiRam, SiReact, SiTailwindcss, SiTypescript, SiVite } from 'react-icons/si';
+import { SiApple, SiDocker, SiFastapi, SiGit, SiGithub, SiMacos, SiOllama, SiPostgresql, SiPython, SiPytorch, SiReact, SiTailwindcss, SiTypescript, SiVite } from 'react-icons/si';
 
 
 
@@ -61,10 +61,10 @@ export default function App() {
             {lang === 'EN'? 'Security is My first priority' : 'Sicherheit hat für mich oberste Priorität'}
           </p>
         </section>
-        <section id='#skills' className='space-y-8'>
+        <section id='skills' className='space-y-8'>
           <div className='space-y-2'>
             <div className='text-xs font-mono font-bold tracking-wider text-violet-600 uppercase'>
-              {lang === 'EN' ? 'SKILLS & ARCHITECTURE' : 'FÄHIGEITEN & STACK'}
+              {lang === 'EN' ? 'SKILLS & ARCHITECTURE' : 'FÄHIGKEITEN & STACK'}
             </div>
             <h3 className='text-2xl md:text-3xl font-bold tracking-tight text-slate-900'>
               {lang === 'EN' ? 'Modern Tools. Enterprise Standards' : 'Moderne Werkzeuge. Enterprise-Standards'}
@@ -75,13 +75,13 @@ export default function App() {
               <span className='w-10 h-10 rounded-xl bg-violet-100 text-violet-600 flex items-center justify-center font-mono font-bold text-xs'>
                 &lt;UI&gt;
               </span>
-              <h3>
+              <h3 className='text-lg font-bold text-slate-900'>
                 {lang === 'EN' ? 'Frontend Architecture' : 'Frontend-Architektur'}
               </h3>
-              <p>
+              <p className='text-sm text-slate-600 leading-relaxed'>
                 {lang === 'EN' ? 'Type-safe component trees in React ensure reliable data flow while responsive Tailwind utility classes deliver fluid layouts across all device screens' : 'Typsichere Komponentenbäume in React gewährleisten einen zuverlässigen Datenfluss, während responsive Tailwind-Utility-Klassen für fließende Layouts auf allen Bildschirmgrößen sorgen.'}
               </p>
-              <span className='flex flex-wrap'>
+              <div className='flex flex-wrap gap-2'>
                 <span className='inline-flex items-center gap-1.5 px-3 py-1 rounded-full text-xs font-medium bg-violet-500/10 text-violet-600 border border-violet-500/20 '>
                   <SiReact className='w-3.5 h-3.5 text-violet-500'/>
                   React
@@ -98,19 +98,19 @@ export default function App() {
                   <SiVite className='w-3.5 h-3.5 text-violet-500'/>
                   Vite
                 </span>
-              </span>
+              </div>
             </div>
             <div className='p-6 rounded-3xl bg-slate-50/60 border border-slate-200/80 hover:border-sky-300 hover:shadow-md transition space-y-4'>
               <span className='w-10 h-10 rounded-xl bg-sky-100 text-sky-600 flex items-center justify-center font-mono font-bold text-xs'>
                 API
               </span>
-              <h3>
+              <h3 className='text-lg font-bold text-slate-900'>
                 {lang === 'EN' ? 'Backend & Relational DBs' : 'Backend & Relationale DBs'}
               </h3>
-              <p>
+              <p className='text-sm text-slate-600 leading-relaxed'>
                 {lang === 'EN' ? 'Asynchronous Python APIs handle high-concurrency requests efficiently while structured PostgreSQL schemas ensure long-term data persistence and integrity.' : 'Asynchrone Python-APIs bewältigen Anfragen mit hoher Gleichzeitigkeit effizient, während strukturierte PostgreSQL-Schemata die langfristige Datenpersistenz und -integrität gewährleisten.'}
               </p>
-              <div className='flex flex-wrap'>
+              <div className='flex flex-wrap gap-2'>
                 <span className='inline-flex items-center gap-1.5 px-3 py-1 rounded-full text-xs font-medium bg-sky-500/10 text-sky-600 border border-sky-500/20'>
                   <SiFastapi className='w-3.5 h-3.5 text-sky-500'/>
                     FastAPI
@@ -129,13 +129,13 @@ export default function App() {
               <div className='w-10 h-10 rounded-xl bg-indigo-100 text-indigo-600 flex items-center justify-center font-mono font-bold text-xs'>
                 {lang === 'EN' ? 'AI' : 'KI'}
               </div>
-              <h3>
+              <h3 className='text-lg font-bold text-slate-900'>
                 {lang === 'EN' ? 'AI Systems & Automation' : 'KI Systeme & Automation'}
               </h3>
-              <p>
+              <p className='text-sm text-slate-600 leading-relaxed'>
                 {lang === 'EN' ? 'RAG pipelines privately process domain-specific documents to feed context into local LLMs , enabling precise, structured data extraction without cloud data leaks.' : 'Lokale RAG-Pipelines (Retrieval-Augmented Generation) verarbeiten domänenspezifische Dokumente vertraulich, um Kontext in lokale Large Language Models (LLMs) einzuspeisen und so eine präzise, ​​strukturierte Datenextraktion ohne das Risiko von Datenabflüssen in die Cloud zu ermöglichen.'}
               </p>
-              <span className='flex flex-wrap'>
+              <div className='flex flex-wrap gap-2'>
                 <span className='inline-flex items-center gap-1.5 px-3 py-1 rounded-full text-xs font-medium bg-indigo-500/10 text-indigo-600 border border-indigo-500/20'>
                   <SiPytorch className='w-3.5 h-3.5 text-indigo-500'/>
                   PyTorch
@@ -150,51 +150,51 @@ export default function App() {
                 <span className='inline-flex items-center gap-1.5 px-3 py-1 rounded-full text-xs font-medium bg-indigo-500/10 text-indigo-600 border border-indigo-500/20'>
                   PgVector
                 </span>
-              </span>
+              </div>
             </div>
             <div className='md:col-span-2 p-6 rounded-3xl bg-slate-50/60 border border-slate-200/80 hover:border-slate-300 hover:shadow-md transition space-y-4'>
               <span className='w-10 h-10 rounded-xl bg-slate-200 text-slate-700 flex items-center justify-center font-mono font-bold text-xs'>
                 DEV
               </span>
-              <h3>
+              <h3 className='text-lg font-bold text-slate-900'>
                 {lang === 'EN' ? 'Engineering Workflow and Dev OPS' : 'Entwicklungs-Workflow & DevOps'}
               </h3>
-              <p>
-                {lang === 'EN' ? 'Mastering local development on macOS demands a flawless Git architecture, isolated containerized workloads, and crisp system optimization for peak engineering velocity.' : 'Die Beherrschung der lokalen Entwicklung unter macOS erfordert eine einwandfreie Git-Architektur, isolierte, containerisierte Workloads sowie eine präzise Systemoptimierung für maximale Entwicklungsgeschwindigkeit.'}
+              <p className='text-sm text-slate-600 leading-relaxed'>
+                {lang === 'EN' ? 'By enforcing strict Git discipline through atomic commits and meticulous branch rebase strategies,I can maintain a flawless and transparent project history across all team environments;similarly, leveraging lightweight containerization ensures completely isolated local runtime setupsthat prevent dependency conflicts and configuration drift from corrupting the host machine.' : 'Durch die konsequente Einhaltung strenger Git-Disziplin – etwa mittels atomarer Commits und sorgfältiger Branch-Rebase-Strategien – gewährleiste ich eine makellose und transparente Projekthistorie über alle Team-Umgebungen hinweg; ebenso sorgt der Einsatz schlanker Containerisierung für vollständig isolierte lokale Laufzeitumgebungen, wodurch verhindert wird, dass Abhängigkeitskonflikte oder Konfigurationsabweichungen das Host-System beeinträchtigen.'}
               </p>
-            <span className='flex flex-wrap'>
+            <div className='flex flex-wrap gap-2'>
               <span className='inline-flex items-center gap-1.5 px-3 py-1 rounded-full text-xs font-medium bg-slate-500/10 text-slate-600 border border-slate-500/20'>
-                <SiDocker/>
+                <SiDocker className='w-3.5 h-3.5 text-slate-600'/>
                 Docker
               </span>
               <span className='inline-flex items-center gap-1.5 px-3 py-1 rounded-full text-xs font-medium bg-slate-500/10 text-slate-600 border border-slate-500/20'>
-                <SiGit/>
+                <SiGit className='w-3.5 h-3.5 text-slate-600'/>
                 Git
               </span>
               <span className='inline-flex items-center gap-1.5 px-3 py-1 rounded-full text-xs font-medium bg-slate-500/10 text-slate-600 border border-slate-500/20'>
-                <SiGithub/>
+                <SiGithub className='w-3.5 h-3.5 text-slate-600'/>
                 GitHub
               </span>
               <span className='inline-flex items-center gap-1.5 px-3 py-1 rounded-full text-xs font-medium bg-slate-500/10 text-slate-600 border border-slate-500/20'>
-                <SiMacos/>
+                <SiMacos className='w-3.5 h-3.5 text-slate-600'/>
                 MacOs
               </span>
               <span className='inline-flex items-center gap-1.5 px-3 py-1 rounded-full text-xs font-medium bg-slate-500/10 text-slate-600 border border-slate-500/20'>
                 CI/CD
               </span>
-            </span>
+            </div>
             </div>
             <div className='p-6 rounded-3xl bg-slate-50/60 border border-slate-200/80 hover:border-amber-300 hover:shadow-md transition space-y-4'>
               <span className='w-10 h-10 rounded-xl bg-amber-100 text-amber-600 flex items-center justify-center font-mono font-bold text-xs'>
                 <SiApple/>
               </span>
-              <h3>
+              <h3 className='text-lg font-bold text-slate-900'>
                 {lang === 'EN' ? 'Hardware and Performance Lab' : 'Hardware- & Leistungslabor'}
               </h3>
-              <p>
+              <p className='text-sm text-slate-600 leading-relaxed'>
                 {lang === 'EN' ? 'Native virtualization on Apple Silicon delivers unmatched execution speed and high thermal efficiency by running containerized workloads directly on unified memory.' : 'Native Virtualisierung auf Apple Silicon sorgt für unübertroffene Ausführungsgeschwindigkeit und hohe thermische Effizienz, indem containerisierte Workloads direkt auf dem Unified Memory ausgeführt werden.'}
               </p>
-              <span className='flex flex-wrap'>
+              <div className='flex flex-wrap gap-2'>
                 <span className='inline-flex items-center gap-1.5 px-3 py-1 rounded-full text-xs font-medium bg-amber-500/10 text-amber-600 border border-amber-500/20'>
                   <SiApple/>
                   Apple Silicon
@@ -202,9 +202,12 @@ export default function App() {
                 <span className='inline-flex items-center gap-1.5 px-3 py-1 rounded-full text-xs font-medium bg-amber-500/10 text-amber-600 border border-amber-500/20'>
                   16 GB Memory
                 </span>
-              </span>
+              </div>
             </div>
           </div>
+        </section>
+        <section id='projects'>
+
         </section>
       </main>
     </div>
