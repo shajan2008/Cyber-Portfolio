@@ -1,6 +1,6 @@
 import { useState } from 'react';
 import type { Language } from './types/portfolio';
-import { SiApple, SiDocker, SiFastapi, SiGit, SiGithub, SiMacos, SiOllama, SiPostgresql, SiPython, SiPytorch, SiReact, SiTailwindcss, SiTypescript, SiVite } from 'react-icons/si';
+import { SiApple, SiCss, SiDocker, SiFastapi, SiGit, SiGithub, SiJavascript, SiMacos, SiOllama, SiPostgresql, SiPython, SiPytorch, SiReact, SiTailwindcss, SiTypescript, SiVite } from 'react-icons/si';
 
 
 
@@ -206,8 +206,28 @@ export default function App() {
             </div>
           </div>
         </section>
-        <section id='projects'>
-
+        <section id='projects' className='space-y-8'>
+          <div className='space-y-2'>
+            <div className='text-xs font-mono font-bold tracking-wider text-violet-600 uppercase '>
+              {lang === 'EN' ? 'FEATURED BUILDS' : 'PRODUKTIONSPROJEKTE'}
+            </div>
+            <h2 className='text-2xl md:text-3xl font-bold tracking-tight text-slate-900'>
+              {lang === 'EN' ? 'Engineered for Excecution & Scale' : 'Entwickelt für Performance & Skalierung.'}
+            </h2>
+            <div className='space-y-8'>
+              <div className='p-8 rounded-3xl bg-slate-50/60 border border-slate-200/80 hover:border-violet-300 hover:shadow-lg transition grid grid-cols-1 md:grid-cols-2 gap-8 items-center'>
+                <div className='space-y-4'>
+                  <div className='flex flex-wrap gap-2'>
+                    <h3 className='text-xl font-bold text-slate-900'>
+                      {lang === 'EN' ? 'Enterprise Multi-currency-Billing Machine' : 'Enterprise Multi-Währungs-Rechnungsengine'}
+                    </h3>
+                    <SiJavascript/>
+                    <SiCss/>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
         </section>
       </main>
     </div>
