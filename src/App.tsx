@@ -1,6 +1,6 @@
 import { useState } from 'react';
 import type { Language } from './types/portfolio';
-import { SiApple, SiCss, SiDocker, SiFastapi, SiGit, SiGithub, SiJavascript, SiMacos, SiOllama, SiPostgresql, SiPython, SiPytorch, SiReact, SiTailwindcss, SiTypescript, SiVite } from 'react-icons/si';
+import { SiApple, SiCss, SiDocker, SiFastapi, SiGit, SiGithub, SiHtml5, SiJavascript, SiLightning, SiMacos, SiOllama, SiPostgresql, SiPython, SiPytorch, SiReact, SiTailwindcss, SiTypescript, SiVite } from 'react-icons/si';
 
 
 
@@ -217,13 +217,45 @@ export default function App() {
             <div className='space-y-8'>
               <div className='p-8 rounded-3xl bg-slate-50/60 border border-slate-200/80 hover:border-violet-300 hover:shadow-lg transition grid grid-cols-1 md:grid-cols-2 gap-8 items-center'>
                 <div className='space-y-4'>
+                  <h3 className='text-xl font-bold text-slate-900'>
+                    {lang === 'EN' ? 'Enterprise Multi-currency-Billing Machine' : 'Enterprise Multi-Währungs-Rechnungsengine'}
+                  </h3>
                   <div className='flex flex-wrap gap-2'>
-                    <h3 className='text-xl font-bold text-slate-900'>
-                      {lang === 'EN' ? 'Enterprise Multi-currency-Billing Machine' : 'Enterprise Multi-Währungs-Rechnungsengine'}
-                    </h3>
                     <SiJavascript/>
                     <SiCss/>
+                    <SiHtml5/>
                   </div>
+                  <p className='text-sm text-slate-600 leading-relaxed'>
+                    {lang === 'EN' ? 'A freelance invoice tracker for DACH-region clients with live EUR/CHF currency conversion and localStorage persistence, built with vanilla JS/HTML/CSS.' : 'Ein Rechnungs-Tracker für Freelancer mit Kunden in der DACH-Region, ausgestattet mit Live-Währungsumrechnung (EUR/CHF) und Datenspeicherung via LocalStorage – entwickelt mit nativem JavaScript, HTML und CSS.'}
+                  </p>
+                  <div className='flex flex-row gap-2 pt-2'>
+                    <span className='inline-flex items-center gap-1 px-2.5 py-0.5 rounded-md text-[11px] font-mono font-medium bg-emerald-600 border border-emerald-500/20'>
+                      Sub 50-ms Conversion
+                    </span>
+                    <span className='inline-flex items-center gap-1 px-2.5 py-0.5 rounded-md text-[11px] font-mono font-medium bg-sky-600 border border-sky-500/20'>
+                      100% Local Persistance
+                    </span>
+                  </div>
+                  <div className='flex flex-row pt-2 gap-2'>
+                    <span className='inline-flex items-center gap-1 px-2.5 py-0.5 font-semibold text-sm text-violet-600'>
+                      <a href="#">
+                      </a>
+                    </span>
+                    <span className='intline-flex items-center text-2xl text-slate-600 font-semibold hover:text-slate-900 '>
+                      <a href='https://github.com/shajan2008/freelancer-billing-dashboard.git' target='new'>
+                        <SiGithub/>
+                      </a>
+                    </span>
+                  </div>
+                </div>
+                <div className='p-6 rounded-2xl bg-white border border-slate-200 shadow-sm space-y-4'>
+                  <h3 className='text-2xl md:text-3xl font-bold tracking-tight text-shadow-neutral-900'>
+                    EUR € | CHF ₣
+                  </h3>
+                  <span className='grid md:grid-cols-2 text-xl text-slate-500'>
+                    Total Billed: €2,450
+                    Pending : CHF 820
+                  </span>
                 </div>
               </div>
             </div>
