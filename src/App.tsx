@@ -1,6 +1,6 @@
 import { useState } from 'react';
 import type { Language } from './types/portfolio';
-import { SiApple, SiCss, SiDocker, SiFastapi, SiGit, SiGithub, SiHtml5, SiJavascript, SiLightning, SiMacos, SiOllama, SiPostgresql, SiPython, SiPytorch, SiReact, SiTailwindcss, SiTypescript, SiVite } from 'react-icons/si';
+import { SiApple, SiCss, SiDocker, SiFastapi, SiGit, SiGithub, SiHtml5, SiJavascript, SiMacos, SiOllama, SiPostgresql, SiPython, SiPytorch, SiReact, SiTailwindcss, SiTypescript, SiVite } from 'react-icons/si';
 
 
 
@@ -256,6 +256,9 @@ export default function App() {
                     Total Billed: €2,450
                     Pending : CHF 820
                   </span>
+                  <div className='grid md:grid-cols-2 text-sm text-slate-500'>
+                    Paid/Pending
+                  </div>
                 </div>
               </div>
             </div>
